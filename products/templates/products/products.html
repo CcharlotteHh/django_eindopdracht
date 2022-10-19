@@ -1,6 +1,7 @@
 {% extends 'index.html' %}
 {% block content %}
 <div class="productsContainer">
+    <div class="product">
 <h1>Products overzicht</h1>
 {% for products in products.all %}
 <a href="products/{{products.id}}">
@@ -9,5 +10,6 @@
 <h6>{{ products.body }}</h6>
 
 {% endfor %}
+</div>
 {% endblock %}
 </div>

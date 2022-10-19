@@ -2,5 +2,9 @@
     background-color: aqua;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
+}
+
+.product{
+    background-color:green;
 }
