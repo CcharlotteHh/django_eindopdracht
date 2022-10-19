@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+Details van product
+<br>
+<h1>{{ product.id }}</h1>
+<img src="{{ product.icon.url }}"/>
+<img src="{{ product.image.url }}"/>
+{{ product.pub_date_pretty }}<br>
+{{ product.summary }}<br>
+{{ product.votes_total }}<br>
+{{ product.hunter.username }}<br>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1>products</h1>
+{% for products in products.all %}
+<img src="{{ products.image.url }}" />
+<h6>{{ products.body }}</h6>
+{% endfor %}
+{% endblock %}
