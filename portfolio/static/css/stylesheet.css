@@ -1,10 +1,21 @@
-.productsContainer {
-    background-color: aqua;
+.productsContainer{
+    width: 1480px;
+    margin: 0 auto;
+
+}
+.product{
+    border: 1px solid black;
     display: flex;
-    flex-direction: column;
-    align-items: center;   
 }
 
-.product{
-    background-color:green;
+.productImg{
+    width: 50%;
+    height: 100%;
+}
+
+.productImg img{
+    height:70%;
+    width:50%;
+    object-fit: cover;
+
 }

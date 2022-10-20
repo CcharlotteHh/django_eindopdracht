@@ -1,15 +1,15 @@
+<div class="productsContainer">
 {% extends 'index.html' %}
 {% block content %}
-<div class="productsContainer">
-    <div class="product">
 <h1>Products overzicht</h1>
 {% for products in products.all %}
-<a href="products/{{products.id}}">
+<div class="product">
+<figure class="productImg">
 <img src="{{ products.image.url }}" />
-</a>
+</figure>
 <h6>{{ products.body }}</h6>
-
+<a href="products/{{products.id}}">Details</a>
+</div>
+</div>
 {% endfor %}
-</div>
 {% endblock %}
-</div>
